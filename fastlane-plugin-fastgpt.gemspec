@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = 'marek724@gmail.com'
 
   spec.summary       = 'Use GPT API to generate content from Fastlane. Usable to generate release notes for TestFlight or AppStore'
-  # spec.homepage      = "https://github.com/<GITHUB_USERNAME>/fastlane-plugin-fastgpt"
+  spec.homepage      = "https://github.com/skyfoxa/fastlane-plugin-gpt"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)
