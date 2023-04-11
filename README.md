@@ -18,9 +18,19 @@ Use GPT API to generate content from Fastlane. Usable to generate release notes 
 
 ## Example
 
-Check out the [example `Fastfile`](fastlane/Fastfile) to see how to use this plugin. Try it by cloning the repo, running `fastlane install_plugins` and `bundle exec fastlane test`.
+```ruby
+lane :notes do |options|
+    version = "2.6.0 (2)" # specify the app version and build number
+    plain_notes = "[PA-1234] Main tab screen title updated" # provide technical changelog
 
-**Note to author:** Please set up a sample project to make it easy for users to explore what your plugin does. Provide everything that is necessary to try out the plugin in this project (including a sample Xcode/Android project if necessary)
+    release_notes = gpt(
+                   api_key: ENV["GPT_KEY"], # you need to generate GPT token and past it here
+                   prompt: "Create human, non-technical and funny release notes for iOS production app #{version} deployed to TestFlight",
+                   changelog: plain_notes
+                )
+    puts release_notes
+  end
+```
 
 ## Run tests for this plugin
 
