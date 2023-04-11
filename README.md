@@ -1,16 +1,16 @@
-# fastgpt plugin
+# gpt plugin
 
-[![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-fastgpt)
+[![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-gpt)
 
 ## Getting Started
 
-This project is a [_fastlane_](https://github.com/fastlane/fastlane) plugin. To get started with `fastlane-plugin-fastgpt`, add it to your project by running:
+This project is a [_fastlane_](https://github.com/fastlane/fastlane) plugin. To get started with `fastlane-plugin-gpt`, add it to your project by running:
 
 ```bash
-fastlane add_plugin fastgpt
+fastlane add_plugin gpt
 ```
 
-## About fastgpt
+## About gpt
 
 Use GPT API to generate content from Fastlane. Usable to generate release notes for TestFlight or AppStore
 

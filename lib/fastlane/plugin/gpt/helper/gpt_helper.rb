@@ -4,12 +4,12 @@ module Fastlane
   UI = FastlaneCore::UI unless Fastlane.const_defined?("UI")
 
   module Helper
-    class FastgptHelper
+    class GptHelper
       # class methods that you define here become available in your action
-      # as `Helper::FastgptHelper.your_method`
+      # as `Helper::GptHelper.your_method`
       #
       def self.show_message
-        UI.message("Hello from the fastgpt plugin helper!")
+        UI.message("Hello from the gpt plugin helper!")
       end
     end
   end

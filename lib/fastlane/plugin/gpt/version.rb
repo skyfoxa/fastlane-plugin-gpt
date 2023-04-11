@@ -1,5 +1,5 @@
 module Fastlane
-  module Fastgpt
+  module Gpt
     VERSION = "0.1.0"
   end
 end
